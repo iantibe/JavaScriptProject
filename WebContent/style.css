@@ -1,0 +1,16 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: green;
+}
+
+.output {
+	border-width: 1px;
+	border-style: solid;
+	margin-top: 25px;
+}
+
+form {
+	border-width: 1px;
+	border-style: solid;
+}
