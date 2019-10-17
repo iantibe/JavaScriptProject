@@ -27,16 +27,16 @@ function generateresult(){
 		var heightinches = document.getElementById("inchesheight").value;
 
 		//convert to float
-		parseFloat('weight');
-		parseFloat('feetheight');
-		parseFloat('inchesheight');
-
+		var floatweight = parseFloat(weight);
+		var floatheightfeet = parseFloat(heightfeet);
+		var floatheightinches = parseFloat(heightinches);
+		
 		//convert height to inches for formula
-		var inches = (12*heightfeet) + heightinches;
-
+		var inches = (12 * floatheightfeet) + floatheightinches;
+		
 		//Calculate BMI
-		var bmi = 703*weight/((inches*inches));
-
+		var bmi = 703 * ((floatweight)/(Math.pow(inches,2)));
+				
 		//Display results
 		document.getElementById("result").innerHTML = bmi; 
 		document.getElementById("guide").style.display = "block";
