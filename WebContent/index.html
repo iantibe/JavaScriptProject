@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>BMI calculator</title>
-<link rel="stylesheet" href="style.css" type="text/css">
-<script type="text/javascript" src="javascript.js"></script>
-</head>
-<body>
-
-<header>
-<h1>Welcome to the Body Mass Index calculator</h1>
-</header>
-
-<form name="input">
-	<h2>Input your weight in pounds and height in feet and inches</h2>
-	Weight(lbs): <input type="text" id="weight" width="30">
-	Height (feet): <input type="text" id="feetheight" width="30">
-	Height (inches): <input type="text" id="inchesheight" width="30">
-	<input type="button" width="20" height="15" onclick="generateresult()">
-</form>
-
-<div class="output">
-	<h3>Your BMI is:</h3> 
-	<div id="result">
-		Click submit to display results here!
-	</div>
-</div>
-</body>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>BMI calculator</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<script type="text/javascript" src="javascript.js"></script>
+	</head>
+	<body>
+		<header>
+		<h1>Welcome to the Body Mass Index calculator</h1>
+		</header>
+	
+		<form name="input">
+			<h2>Input your weight in pounds and height in feet and inches</h2>
+			Weight(lbs): <input type="text" id="weight" width="30">
+			Height (feet): <input type="text" id="feetheight" width="30">
+			Height (inches): <input type="text" id="inchesheight" width="30">
+			<input type="button" value="Submit" onclick="generateresult()">
+		</form>
+	
+		<div class="output">
+			<h3>Your BMI is:</h3> 
+			<div id="result">
+				Click submit to display results here!
+			</div>
+		</div>
+		
+		<div id="guide">
+		<p>BMI	Weight Status</p>
+		<p>Below 18.5	Under weight</p>
+		<p>18.5 to 24.9 Normal or Healthy Weight</p>
+		<p>25.0 to 29.9 Overweight</p>
+		<p>30.0 and Above obese</p>
+		</div>
+	</body>
 </html>
